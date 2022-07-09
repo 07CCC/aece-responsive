@@ -21,18 +21,18 @@
                 </a>
                 <nav class="header__nav">
                     <button class="burger">
-                        <span class="burger__line"></span>
-                        <span class="burger__line"></span>
-                        <span class="burger__line"></span>
+                        <span class="burger__line burger__line--narrow"></span>
+                        <span class="burger__line burger__line--narrow"></span>
+                        <span class="burger__line burger__line--narrow"></span>
                     </button>
                     <ul class="menu">
-                        <li><a href="#" class="menu__link">Inicio</a></li>
-                        <li><a href="#nosotros" class="menu__link">Nosotros</a></li>
-                        <li><a href="#aliados" class="menu__link">Aliados</a></li>
-                        <li><a href="#cursos" class="menu__link">Cursos</a></li>
-                        <li><a href="#testimonios" class="menu__link">Testimonios</a></li>
-                        <li><a href="#auspiciadores" class="menu__link">Auspiciadores</a></li>
-                        <li><a href="#footer" class="menu__link">Contacto</a></li>
+                        <li><a href="#" class="menu__link menu__link--visible">Inicio</a></li>
+                        <li><a href="#nosotros" class="menu__link menu__link--visible">Nosotros</a></li>
+                        <li><a href="#aliados" class="menu__link menu__link--visible">Aliados</a></li>
+                        <li><a href="#cursos" class="menu__link menu__link--visible">Cursos</a></li>
+                        <li><a href="#testimonios" class="menu__link menu__link--visible">Testimonios</a></li>
+                        <li><a href="#auspiciadores" class="menu__link menu__link--visible">Auspiciadores</a></li>
+                        <li><a href="#contacto" class="menu__link menu__link--visible">Contacto</a></li>
                     </ul>
                 </nav>
                 <div class="header__options">
@@ -161,7 +161,7 @@
                 <div class="section__content section__content--cursos">
                     <div class="cursos-sidebar" data-sal="slide-right" data-sal-duration="1000">
                         <h2>
-                            Cursos disponibles
+                            Lo que tenemos para ti
                         </h2>
                         <p>
                             En tres modalidades, de manera virtual: talleres de formación, cursos de capacitación y diplomados especializados.
@@ -289,7 +289,7 @@
                     </ul>
                 </div>
             </section>
-            <section id="auspiciadores" class="section section--grey section--round-corners">
+            <section id="auspiciadores" class="section section--grey">
                 <div class="section__content" data-sal="fade" data-sal-duration="1000">
                     <h2 class="section__title">
                         Nuestros auspiciadores
@@ -299,6 +299,34 @@
                         <img src="images/auspiciadores2.png" alt="Auspiciador 02 Logo">
                         <img src="images/auspiciadores3.png" alt="Auspiciador 03 Logo">
                     </div>
+                </div>
+            </section>
+            <section id="contacto" class="section section--round-corners">
+                <div class="section__content" data-sal="fade" data-sal-duration="1000">
+                    <h2 class="section__title">
+                        Ponte en contacto
+                    </h2>
+                    <form action="/" class="contact-form">
+                        <div class="contact-form__group">
+                            <label class="label">Nombre</label>
+                            <input type="text" placeholder="Ingresa tus nombres y apellidos" class="field">
+                        </div>
+                        <div class="contact-form__group">
+                            <label class="label">Email</label>
+                            <input type="email" placeholder="Ingresa tu correo electrónico" class="field">
+                        </div>
+                        <div class="contact-form__group">
+                            <label class="label">Teléfono</label>
+                            <input type="text" placeholder="Ingresa tu número de contacto" class="field">
+                        </div>
+                        <div class="contact-form__group">
+                            <label class="label">Mensaje</label>
+                            <input type="text" placeholder="Ingresa tu mensaje" class="field field--big">
+                        </div>
+                        <button class="cta cta--big cta--form">
+                            Enviar
+                        </button>
+                    </form>
                 </div>
             </section>
         </main>
@@ -326,6 +354,7 @@
                         <a href="#cursos" class="footer__link">Cursos</a>
                         <a href="#testimonios" class="footer__link">Testimonios</a>
                         <a href="#auspiciadores" class="footer__link">Auspiciadores</a>
+                        <a href="#contacto" class="footer__link">Contacto</a>
                     </div>
                     <div class="footer__usefullinks">
                         <h4 class="footer__title">
@@ -371,6 +400,9 @@
                 </div>
             </div>
         </footer>
+        <a href="https://api.whatsapp.com/send?phone=51954076158&text=Hola,%20quisiera%20saber%20más%20sobre%20sus%20cursos." target="_blank" class="whatsapp">
+            <img src="images/icon-whatsapp.svg" alt="WhatsApp Icon" class="whatsapp__icon">
+        </a>
         <script src="js/jquery-3.6.0.min.js"></script>
         <script src="js/slick.min.js"></script>
         <script src="js/sal.js"></script>
