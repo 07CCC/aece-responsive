@@ -1,3 +1,16 @@
+const burger = document.querySelector(".burger");
+const menu = document.querySelector(".menu");
+
+burger.addEventListener("click", ()=>{
+  menu.classList.toggle("menu--visible");
+  burger.classList.toggle("burger--vertical");
+});
+
+menu.addEventListener("click", ()=>{
+  menu.classList.remove("menu--visible");
+  burger.classList.remove("burger--vertical");
+}); 
+
 $(".aliados-slideshow").slick({
     infinite: true,
     slidesToShow: 4,
